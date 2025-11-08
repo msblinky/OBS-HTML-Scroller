@@ -40,7 +40,7 @@ If audio is routed by OBS: enable Control audio via OBS; otherwise leave it off 
 JSON Examples
 {
   "items": [
-    { "text":"Welcome 👋","speed":0,"wait":1200,"fadeIn":400,"fadeOut":400 },
+    { "text":"Welcome ","speed":0,"wait":1200,"fadeIn":400,"fadeOut":400 },
     { "type":"image","src":"assets/Tux.png","height":"42vh","dir":"left","speed":90,"wait":900,"fadeIn":300,"fadeOut":300 },
     { "text":"Left → Right marquee","dir":"right","speed":140,"wait":800 },
     { "type":"sound","src":"assets/DF_Alert-000.wav","volume":1,"duration":1800,"fadeIn":150,"fadeOut":200 },
@@ -50,7 +50,7 @@ JSON Examples
 }
 
 queue.json (played next / immediate)
-{ "items": [ { "text":"🚨 Hotfix deployed","speed":0,"wait":1500,"fadeIn":300,"fadeOut":300 } ] }
+{ "items": [ { "text":" Hotfix deployed","speed":0,"wait":1500,"fadeIn":300,"fadeOut":300 } ] }
 
 
 Live Inserts & Push
