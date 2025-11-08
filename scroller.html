@@ -1,0 +1,731 @@
+<!--
+OBS-HTML-Scroller
+
+                   GNU LESSER GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+
+  This version of the GNU Lesser General Public License incorporates
+the terms and conditions of version 3 of the GNU General Public
+License, supplemented by the additional permissions listed below.
+
+  0. Additional Definitions.
+
+  As used herein, "this License" refers to version 3 of the GNU Lesser
+General Public License, and the "GNU GPL" refers to version 3 of the GNU
+General Public License.
+
+  "The Library" refers to a covered work governed by this License,
+other than an Application or a Combined Work as defined below.
+
+  An "Application" is any work that makes use of an interface provided
+by the Library, but which is not otherwise based on the Library.
+Defining a subclass of a class defined by the Library is deemed a mode
+of using an interface provided by the Library.
+
+  A "Combined Work" is a work produced by combining or linking an
+Application with the Library.  The particular version of the Library
+with which the Combined Work was made is also called the "Linked
+Version".
+
+  The "Minimal Corresponding Source" for a Combined Work means the
+Corresponding Source for the Combined Work, excluding any source code
+for portions of the Combined Work that, considered in isolation, are
+based on the Application, and not on the Linked Version.
+
+  The "Corresponding Application Code" for a Combined Work means the
+object code and/or source code for the Application, including any data
+and utility programs needed for reproducing the Combined Work from the
+Application, but excluding the System Libraries of the Combined Work.
+
+  1. Exception to Section 3 of the GNU GPL.
+
+  You may convey a covered work under sections 3 and 4 of this License
+without being bound by section 3 of the GNU GPL.
+
+  2. Conveying Modified Versions.
+
+  If you modify a copy of the Library, and, in your modifications, a
+facility refers to a function or data to be supplied by an Application
+that uses the facility (other than as an argument passed when the
+facility is invoked), then you may convey a copy of the modified
+version:
+
+   a) under this License, provided that you make a good faith effort to
+   ensure that, in the event an Application does not supply the
+   function or data, the facility still operates, and performs
+   whatever part of its purpose remains meaningful, or
+
+   b) under the GNU GPL, with none of the additional permissions of
+   this License applicable to that copy.
+
+  3. Object Code Incorporating Material from Library Header Files.
+
+  The object code form of an Application may incorporate material from
+a header file that is part of the Library.  You may convey such object
+code under terms of your choice, provided that, if the incorporated
+material is not limited to numerical parameters, data structure
+layouts and accessors, or small macros, inline functions and templates
+(ten or fewer lines in length), you do both of the following:
+
+   a) Give prominent notice with each copy of the object code that the
+   Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) Accompany the object code with a copy of the GNU GPL and this license
+   document.
+
+  4. Combined Works.
+
+  You may convey a Combined Work under terms of your choice that,
+taken together, effectively do not restrict modification of the
+portions of the Library contained in the Combined Work and reverse
+engineering for debugging such modifications, if you also do each of
+the following:
+
+   a) Give prominent notice with each copy of the Combined Work that
+   the Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) Accompany the Combined Work with a copy of the GNU GPL and this license
+   document.
+
+   c) For a Combined Work that displays copyright notices during
+   execution, include the copyright notice for the Library among
+   these notices, as well as a reference directing the user to the
+   copies of the GNU GPL and this license document.
+
+   d) Do one of the following:
+
+       0) Convey the Minimal Corresponding Source under the terms of this
+       License, and the Corresponding Application Code in a form
+       suitable for, and under terms that permit, the user to
+       recombine or relink the Application with a modified version of
+       the Linked Version to produce a modified Combined Work, in the
+       manner specified by section 6 of the GNU GPL for conveying
+       Corresponding Source.
+
+       1) Use a suitable shared library mechanism for linking with the
+       Library.  A suitable mechanism is one that (a) uses at run time
+       a copy of the Library already present on the user's computer
+       system, and (b) will operate properly with a modified version
+       of the Library that is interface-compatible with the Linked
+       Version.
+
+   e) Provide Installation Information, but only if you would otherwise
+   be required to provide such information under section 6 of the
+   GNU GPL, and only to the extent that such information is
+   necessary to install and execute a modified version of the
+   Combined Work produced by recombining or relinking the
+   Application with a modified version of the Linked Version. (If
+   you use option 4d0, the Installation Information must accompany
+   the Minimal Corresponding Source and Corresponding Application
+   Code. If you use option 4d1, you must provide the Installation
+   Information in the manner specified by section 6 of the GNU GPL
+   for conveying Corresponding Source.)
+
+  5. Combined Libraries.
+
+  You may place library facilities that are a work based on the
+Library side by side in a single library together with other library
+facilities that are not Applications and are not covered by this
+License, and convey such a combined library under terms of your
+choice, if you do both of the following:
+
+   a) Accompany the combined library with a copy of the same work based
+   on the Library, uncombined with any other library facilities,
+   conveyed under the terms of this License.
+
+   b) Give prominent notice with the combined library that part of it
+   is a work based on the Library, and explaining where to find the
+   accompanying uncombined form of the same work.
+
+  6. Revised Versions of the GNU Lesser General Public License.
+
+  The Free Software Foundation may publish revised and/or new versions
+of the GNU Lesser General Public License from time to time. Such new
+versions will be similar in spirit to the present version, but may
+differ in detail to address new problems or concerns.
+
+  Each version is given a distinguishing version number. If the
+Library as you received it specifies that a certain numbered version
+of the GNU Lesser General Public License "or any later version"
+applies to it, you have the option of following the terms and
+conditions either of that published version or of any later version
+published by the Free Software Foundation. If the Library as you
+received it does not specify a version number of the GNU Lesser
+General Public License, you may choose any version of the GNU Lesser
+General Public License ever published by the Free Software Foundation.
+
+  If the Library as you received it specifies that a proxy can decide
+whether future versions of the GNU Lesser General Public License shall
+apply, that proxy's public statement of acceptance of any version is
+permanent authorization for you to choose that version for the
+Library.
+
+ */
+/**
+ * OBS-HTML-Scroller
+ * Copyright (C) <2025>  <Ms. Blinky>
+ * Follow me on Twitch https://www.twitch.tv/ms_blinky
+ * info@peek-and-poke-media.de
+ * @author Ms. Blinky 
+ */
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>JSON Scroller (Markdown • Hotkeys • Queue • WS • Sound • Attach)</title>
+<style>
+  :root{
+    --font-size:48px; --line-height:1.35; --text-color:#fff;
+    --max-width:90vw; --padding:2vh 4vw; --font:system-ui,Segoe UI,Roboto,Helvetica,Arial;
+    --shadow:0 2px 24px rgba(0,0,0,.45); --fade:1; --bg-alpha:0;
+  }
+  html,body{height:100%;margin:0;background:rgba(0,0,0,var(--bg-alpha))}
+  *{box-sizing:border-box}
+  .viewport{position:relative;width:100vw;height:100vh;overflow:hidden;pointer-events:none;}
+  .para{
+    position:absolute; left:0; top:0; transform:translate(-200vw,-200vh); opacity:0; visibility:hidden;
+    max-width:var(--max-width); padding:var(--padding);
+    color:var(--text-color); font:500 var(--font-size)/var(--line-height) var(--font);
+    text-align:center; text-shadow:var(--shadow); white-space:pre-wrap; word-break:break-word;
+  }
+  .para img{display:block;max-width:100%;max-height:80vh;height:auto;object-fit:contain;margin:auto}
+  .para code{font:600 0.9em/1.2 ui-monospace,monospace; background:rgba(255,255,255,.1); padding:.1em .3em; border-radius:.25em}
+  .para a{color:#9ad2ff; text-decoration:none}
+  .para a:hover{text-decoration:underline}
+  .debug{position:fixed;right:.5rem;bottom:.5rem;font:12px/1.2 ui-monospace,monospace;color:#ccc;opacity:.6}
+</style>
+</head>
+<body>
+
+<!--
+Examples & quick ops
+
+Serve:
+  python3 -m http.server 8000
+
+OBS URL — basic (with cache-buster):
+  http://127.0.0.1:8000/scroller.html?src=data/data.json&dir=up&speed=120&fi=600&fo=600&wait=800&loop=1&md=1&debug=1&cb=1731080000000
+  Tip: bump &cb=TIMESTAMP after edits (or enable “Refresh when active” in OBS).
+
+OBS URL — live inserts (instant):
+  http://127.0.0.1:8000/scroller.html?src=data/data.json&dir=up&speed=120&fi=600&fo=600&wait=800&loop=1&md=1&queue=data/queue.json&queueMode=immediate&queueRefresh=0.5&theme=glass&cb=1731080000000
+
+Minimal data.json:
+  {
+    "items": [
+      { "text":"Welcome 👋","speed":0,"wait":1200,"fadeIn":400,"fadeOut":400 },
+      { "type":"image","src":"assets/Tux.png","height":"42vh","dir":"left","speed":90,"wait":900,"fadeIn":300,"fadeOut":300 },
+      { "text":"Left → Right marquee","dir":"right","speed":140,"wait":800 },
+      { "type":"sound","src":"assets/DF_Alert-000.wav","volume":1,"duration":1800,"fadeIn":150,"fadeOut":200 },
+      { "text":"New build is live!","dir":"left","speed":120,"fadeIn":400,"fadeOut":400,
+        "audio": { "src":"assets/DF_Alert-000.wav","volume":1,"offset":0,"duration":0,"fadeIn":150,"fadeOut":200,"loop":false } }
+    ]
+  }
+
+queue.json (played next / immediate):
+  { "items": [ { "text":"🚨 Hotfix deployed","speed":0,"wait":1500,"fadeIn":300,"fadeOut":300 } ] }
+
+WebSocket push payload:
+  { "items": [ { "text":"Live insert via WS","speed":0,"wait":1200 } ] }
+
+Theme presets:
+  ?theme=clean | glass | bold   (URL params like &color=… still override)
+
+CSS overrides quickref:
+  ?fs=52 or 52px   ?lh=1.3   ?color=%23FFEEAA   ?mw=90vw   ?pad=2vh%204vw
+  ?fade=1   ?bga=0.05   ?shadow=0%208px%2048px%20rgba(0,0,0,.75)
+  ?font=Inter,ui-sans-serif   ?allowHTML=1
+
+CLI tip (force queue.json change by bumping a nonce):
+  tmp=$(mktemp); jq '.t=(now*1000|floor)' data/queue.json > "$tmp" && mv "$tmp" data/queue.json
+-->
+
+<div class="viewport" id="vp"></div>
+<div class="debug" id="dbg" hidden></div>
+
+<script>
+(function(){
+  const qs = new URLSearchParams(location.search);
+  const SRC          = qs.get('src')           || 'data.json';
+  const REFRESH_SEC  = +qs.get('refresh')      || 0;        // main poll
+  const LOOP         = qs.get('loop') !== '0';
+  const ALLOW_HTML   = qs.get('allowHTML') === '1';
+  const DEF_SPEED    = +qs.get('speed')        || 100;      // px/s
+  const DEF_WAIT     = +qs.get('wait')         || 800;      // ms
+  const START_DELAY  = +qs.get('startDelay')   || 0;        // ms
+  const DEF_FADE_IN  = +qs.get('fi')           || 300;      // ms
+  const DEF_FADE_OUT = +qs.get('fo')           || 300;      // ms
+  const DEBUG        = qs.get('debug') === '1';
+  const MD_DEFAULT   = qs.get('md') === '1';
+  const QUEUE_SRC    = qs.get('queue') || '';
+  const QUEUE_MODE   = (qs.get('queueMode') || 'next').toLowerCase(); // next|tail|immediate
+  const QUEUE_REFRESH= +(qs.get('queueRefresh') || REFRESH_SEC || 2);
+  const WS_URL       = qs.get('ws') || '';
+
+  function normalizeDir(d){
+    if (d==null) return 'up';
+    const m=String(d).toLowerCase();
+    if (m==='1') return 'down'; if (m==='2') return 'up'; if (m==='3') return 'right'; if (m==='4') return 'left';
+    return ['up','down','left','right'].includes(m)?m:'up';
+  }
+  const DEF_DIR = normalizeDir(qs.get('dir'));
+
+  // CSS overrides
+ function applyTheme(name){
+   const t=(name||'').toLowerCase();
+   const vars = {
+     clean: { '--text-color':'#fff','--shadow':'0 2px 24px rgba(0,0,0,.45)','--bg-alpha':'0' },
+     glass: { '--text-color':'#eaf2ff','--shadow':'0 6px 40px rgba(0,0,0,.6)','--bg-alpha':'0.05' },
+     bold:  { '--text-color':'#fffbcc','--shadow':'0 8px 48px rgba(0,0,0,.75)','--bg-alpha':'0.1' }
+   }[t];
+   if(!vars) return;
+   for (const [k,v] of Object.entries(vars)) document.documentElement.style.setProperty(k,v);
+ }
+  const t=String(qs.get('theme')||'').toLowerCase(); if(t&&t!=='none'&&t!=='reset') applyTheme(t);
+  const setVar=(k,v)=>v&&document.documentElement.style.setProperty(k,v);
+  setVar('--font-size', (qs.get('fs')||'').match(/^\d+$/)?qs.get('fs')+'px':qs.get('fs'));
+  setVar('--line-height', qs.get('lh'));
+  setVar('--text-color', qs.get('color'));
+  setVar('--max-width', qs.get('mw'));
+  setVar('--padding', qs.get('pad'));
+  setVar('--fade', qs.get('fade'));
+  setVar('--bg-alpha', qs.get('bga'));
+  setVar('--shadow', qs.get('shadow'));
+  setVar('--font', qs.get('font')?decodeURIComponent(qs.get('font')):null);
+
+  const vp=document.getElementById('vp');
+  const dbg=document.getElementById('dbg'); if (DEBUG) dbg.hidden=false;
+
+  // --- State ---
+  let items=[], lastMainHash='', running=false, stopRequested=false;
+  let paused=false, skipRequested=false;
+  let inserts=[]; let lastQueueHash='';
+
+  // --- Utils ---
+  function log(m){ if (DEBUG) console.log('[scroller]', m); }
+  function showDbg(m){ if (DEBUG) dbg.textContent=m; }
+  function hashString(s){let h=2166136261|0; for(let i=0;i<s.length;i++){h^=s.charCodeAt(i); h=Math.imul(h,16777619)} return (h>>>0).toString(16)}
+  async function fetchText(url){const r=await fetch(url,{cache:'no-store'}); if(!r.ok) throw new Error(`HTTP ${r.status}`); return r.text()}
+  const asNum=(v,def)=>{ const n=Number(v); return Number.isFinite(n)?n:def; };
+  const clamp01=v=>{ const n=Number(v); return Number.isFinite(n)? Math.min(1,Math.max(0,n)) : 1; };
+
+  function setEdgeMaskFor(dir){
+    const fade = Number(getComputedStyle(document.documentElement).getPropertyValue('--fade')) || 0;
+    if (!fade){ vp.style.webkitMaskImage = vp.style.maskImage = ''; return; }
+    const full = (dir==='up'||dir==='down')
+      ? 'linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 92%, rgba(0,0,0,0) 100%)'
+      : 'linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 92%, rgba(0,0,0,0) 100%)';
+    vp.style.webkitMaskImage = full; vp.style.maskImage = full;
+  }
+
+  // Markdown (light)
+  function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m]))}
+  function mdInline(s){
+    s = s.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_,a,u)=>`<img alt="${escapeHtml(a)}" src="${escapeHtml(u)}">`);
+    s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_,t,u)=>`<a href="${escapeHtml(u)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t)}</a>`);
+    s = s.replace(/`([^`]+)`/g, (_,c)=>`<code>${escapeHtml(c)}</code>`);
+    s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    s = s.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+    return s;
+  }
+  function markdownToHTML(md){
+    const lines = String(md||'').replace(/\r\n?/g,'\n').split('\n');
+    let html='',i=0;
+    while(i<lines.length){
+      const mH=/^(#{1,3})\s+(.*)$/.exec(lines[i]);
+      if (mH){ const lvl=mH[1].length; html+=`<h${lvl}>${mdInline(mH[2])}</h${lvl}>`; i++; continue; }
+      if (/^\s*[-*]\s+/.test(lines[i])){
+        html+='<ul>'; while(i<lines.length && /^\s*[-*]\s+/.test(lines[i])){ html+=`<li>${mdInline(lines[i].replace(/^\s*[-*]\s+/,''))}</li>`; i++; } html+='</ul>'; continue;
+      }
+      if (/^\s*$/.test(lines[i])){ html+='<br>'; i++; continue; }
+      let buf=[]; while(i<lines.length && !/^\s*$/.test(lines[i])){ buf.push(lines[i]); i++; }
+      html+=`<p>${mdInline(buf.join(' '))}</p>`;
+    }
+    return html;
+  }
+
+  // Element staging (prevents pop)
+  function createPara(){ const el=document.createElement('div'); el.className='para'; vp.appendChild(el); return el; }
+  async function ensureImagesLoaded(root, timeout=10000){
+    const imgs=[...root.querySelectorAll('img')]; if(!imgs.length) return;
+    await Promise.all(imgs.map(img=>(
+      (img.complete && img.naturalWidth>0) ? Promise.resolve() :
+      new Promise(res=>{ const done=()=>res(); img.addEventListener('load',done,{once:true}); img.addEventListener('error',done,{once:true}); setTimeout(done,timeout); })
+    )));
+  }
+  async function setContentTo(el, it){
+    el.innerHTML='';
+    if (it.kind==='image'){
+      const img=new Image(); img.src=it.src;
+      if (it.width) img.style.width=it.width; if (it.height) img.style.height=it.height;
+      img.style.objectFit=it.mode||'contain'; img.style.display='block'; img.style.margin='auto';
+      el.append(img);
+    } else {
+      if (it.md || MD_DEFAULT) el.innerHTML = markdownToHTML(it.text);
+      else if (ALLOW_HTML) el.innerHTML = it.text;
+      else el.textContent = it.text;
+    }
+    await ensureImagesLoaded(el);
+  }
+
+  // Pause-aware timers
+  async function sleepP(ms){
+    let remaining=ms; let last=performance.now();
+    while(remaining>0){
+      if (skipRequested) return;
+      if (paused){ await waitUntilUnpaused(); last=performance.now(); continue; }
+      await new Promise(r=>requestAnimationFrame(()=>r()));
+      const now=performance.now(); if(!paused){ remaining -= (now - last); last = now; }
+    }
+  }
+  function waitUntilUnpaused(){ return new Promise(res=>{ const loop=()=>{ if(!paused) res(); else requestAnimationFrame(loop); }; requestAnimationFrame(loop); }); }
+  function fadeEl(el, from, to, ms){
+    return new Promise(res=>{
+      el.style.opacity=from; if (ms<=0){ el.style.opacity=to; return res(); }
+      let acc=0,last=performance.now();
+      const tick=now=>{
+        if (skipRequested){ el.style.opacity=to; return res(); }
+        if (paused){ last=now; return requestAnimationFrame(tick); }
+        acc += (now-last); last=now;
+        const k=Math.min(1, acc/ms); el.style.opacity=String(from+(to-from)*k);
+        if (k>=1) res(); else requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    });
+  }
+  function centerXY(vpW,vpH,w,h){ return { x:(vpW-w)/2, y:(vpH-h)/2 }; }
+
+  // --- Audio helpers (standalone + attached) ---
+  function parseAudioSpec(n){
+    const a = n && n.audio; if (!a) return null;
+    const spec = typeof a==='string' ? {src:a} : {...a};
+    spec.src     = spec.src || '';
+    spec.volume  = clamp01(spec.volume ?? 1);
+    spec.offset  = asNum(spec.offset, 0);
+    spec.duration= asNum(spec.duration, 0);     // 0 => end with visual
+    spec.fadeIn  = asNum(spec.fadeIn, DEF_FADE_IN);
+    spec.fadeOut = asNum(spec.fadeOut, DEF_FADE_OUT);
+    spec.loop    = !!spec.loop;
+    return spec;
+  }
+  function loadAudio(a, timeout=8000){
+    return new Promise(res=>{
+      let done=false; const finish=()=>{ if(!done){ done=true; res(); } };
+      const t=setTimeout(finish, timeout);
+      a.addEventListener('canplaythrough', ()=>{ clearTimeout(t); finish(); }, {once:true});
+      a.addEventListener('loadeddata', ()=>{ clearTimeout(t); finish(); }, {once:true});
+    });
+  }
+
+ function fadeAudio(a, from, to, ms, isCancelled=()=>false){
+   return new Promise(res=>{
+     a.volume = from;
+     if (ms<=0 || isCancelled()) { a.volume = to; return res(); }
+     const wantUp = to > from; // only resume when fading up
+     let acc=0, last=performance.now();
+     const tick = now=>{
+       if (isCancelled() || skipRequested){ a.volume = to; return res(); }
+       if (paused){ if (!a.paused) try{ a.pause(); }catch{} last=now; return requestAnimationFrame(tick); }
+       if (wantUp && a.paused) try{ a.play().catch(()=>{}); }catch{}
+       acc += (now-last); last = now;
+       const k = Math.min(1, acc/ms);
+       a.volume = from + (to-from)*k;
+       if (k>=1) res(); else requestAnimationFrame(tick);
+     };
+     requestAnimationFrame(tick);
+   });
+}
+
+
+  async function waitEndedOrDuration(a, durationMs){
+    if (durationMs>0){ await sleepP(durationMs); return; }
+    while(!a.ended && !skipRequested){
+      if (paused){ if (!a.paused) try{ a.pause(); }catch{} }
+      else { if (a.paused) try{ a.play().catch(()=>{}); }catch{} }
+      await new Promise(r=>requestAnimationFrame(()=>r()));
+    }
+  }
+ 
+async function startAttachedAudio(spec){
+  if (!spec || !spec.src) return null;
+  const a = document.createElement('audio');
+  a.src = spec.src; a.preload='auto'; a.loop=!!spec.loop; a.volume=0; a.crossOrigin='anonymous';
+  a.style.position='absolute'; a.style.left='-99999px'; a.style.width='0'; a.style.height='0';
+  document.body.appendChild(a);
+
+  await loadAudio(a);
+
+  let cancelled=false, stopped=false, durTimer=null;
+  const isCancelled = ()=>cancelled;
+
+  (async ()=>{
+    if (spec.offset>0) await sleepP(spec.offset);
+    if (isCancelled()) return;
+    try{ await a.play(); }catch{}
+    await fadeAudio(a, 0, clamp01(spec.volume ?? 1), spec.fadeIn, isCancelled);
+    if (spec.duration>0 && !isCancelled()){
+      const body = Math.max(0, spec.duration - spec.fadeOut);
+      durTimer = setTimeout(async ()=>{
+        if (!isCancelled()){
+          await fadeAudio(a, a.volume, 0, spec.fadeOut, isCancelled);
+          try{ a.pause(); }catch{} a.remove();
+        }
+      }, body);
+    }
+  })();
+
+  const stop = async ()=>{
+    if (stopped) return; stopped = true; cancelled = true;
+    if (durTimer) { clearTimeout(durTimer); durTimer = null; }
+    await fadeAudio(a, a.volume, 0, spec.fadeOut, ()=>false);
+    a.muted = true; a.volume = 0;
+    try { a.pause(); } catch {}
+    a.src = ""; a.load();   // drop any pending decoder state
+    a.remove();
+  };
+  return { stop };
+}
+
+
+
+  // --- Parse items ---
+  function mapJsonNode(n){
+    const t = (n.type||'').toLowerCase();
+    const base = {
+      speed: asNum(n.speed, DEF_SPEED),
+      wait: asNum(n.wait, DEF_WAIT),
+      fadeIn: asNum(n.fadeIn, DEF_FADE_IN),
+      fadeOut: asNum(n.fadeOut, DEF_FADE_OUT),
+      dir: normalizeDir(n.dir ?? DEF_DIR),
+      md: (n.md===true) || (n.md==='1') || false
+    };
+
+    // SOUND item (standalone)
+    if (t==='sound' || (!!n.sound && !t)){
+      return {
+        kind:'sound',
+        src: n.src || n.sound || '',
+        volume: clamp01(n.volume ?? 1),
+        loop: !!n.loop,
+        duration: asNum(n.duration, 0),
+        wait: base.wait, fadeIn: base.fadeIn, fadeOut: base.fadeOut
+      };
+    }
+
+    // IMAGE item
+    if (t==='image' || (!!n.src && !t)){
+      const item = { kind:'image', src:n.src||n.img||'', width:n.width||'', height:n.height||'', mode:n.mode||'contain', ...base };
+      const audio = parseAudioSpec(n); if (audio) item.audio = audio;
+      return item;
+    }
+
+    // TEXT item
+    const item = { kind:'text', text:String(n.text ?? ''), ...base };
+    const audio = parseAudioSpec(n); if (audio) item.audio = audio;
+    return item;
+  }
+  function parseItems(raw){
+    let d = JSON.parse(raw);
+    if (Array.isArray(d)) d = {items:d};
+    if (!Array.isArray(d.items)) throw new Error('JSON must be {items:[...]} or an array.');
+    return d.items.map(mapJsonNode);
+  }
+
+  async function loadMain(){
+    const raw=await fetchText(SRC);
+    const h=hashString(raw);
+    if (h!==lastMainHash){
+      lastMainHash=h; items=parseItems(raw);
+      log(`Loaded main ${items.length} items (${SRC})`);
+      return true;
+    }
+    return false;
+  }
+  async function pollMainLoop(){
+    if (REFRESH_SEC<=0) return;
+    while(true){ await sleepP(REFRESH_SEC*1000); try{ await loadMain(); }catch(e){ log('Main poll error: '+e.message); } }
+  }
+  async function pollQueueLoop(){
+    if (!QUEUE_SRC) return;
+    while(true){
+      await sleepP((QUEUE_REFRESH>0?QUEUE_REFRESH:2)*1000);
+      try{
+        const raw=await fetchText(QUEUE_SRC);
+        const h=hashString(raw);
+        if (h!==lastQueueHash){
+          lastQueueHash=h;
+          const newItems=parseItems(raw);
+          if (newItems.length){
+            log(`Queue: +${newItems.length}`);
+            if (QUEUE_MODE==='immediate'){ inserts.unshift(...newItems); skipRequested=true; }
+            else if (QUEUE_MODE==='tail'){ inserts.push(...newItems); }
+            else { inserts.unshift(...newItems); }
+          }
+        }
+      }catch(e){ log('Queue poll error: '+e.message); }
+    }
+  }
+
+  // --- Animations ---
+  async function animateItem(it){
+    const dir=normalizeDir(it.dir ?? DEF_DIR);
+    const speed=Math.max(0, Number(it.speed)||0);
+    const wait=Math.max(0, Number(it.wait)||0);
+    const fi=Math.max(0, Number(it.fadeIn)||0);
+    const fo=Math.max(0, Number(it.fadeOut)||0);
+
+    setEdgeMaskFor(dir);
+    const el=createPara(); await setContentTo(el,it);
+    await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
+
+    const vpW=vp.clientWidth, vpH=vp.clientHeight;
+    const w=el.scrollWidth,  h=el.scrollHeight;
+
+    const attached = it.audio ? await startAttachedAudio(it.audio) : null;
+
+    if (speed===0){
+      const c=centerXY(vpW,vpH,w,h);
+      el.style.transform=`translate(${c.x}px, ${c.y}px)`; el.style.visibility='visible';
+      await fadeEl(el, 0, 1, fi);
+      await sleepP(wait);
+      await fadeEl(el, 1, 0, fo);
+      if (attached) await attached.stop();
+      el.remove(); return;
+    }
+
+    let xStart,xEnd,yStart,yEnd;
+    if (dir==='up'){ const cx=(vpW-w)/2; xStart=xEnd=cx; yStart=vpH;  yEnd=-h; }
+    else if (dir==='down'){ const cx=(vpW-w)/2; xStart=xEnd=cx; yStart=-h; yEnd=vpH; }
+    else if (dir==='left'){ const cy=(vpH-h)/2; yStart=yEnd=cy; xStart=vpW; xEnd=-w; }
+    else { const cy=(vpH-h)/2; yStart=yEnd=cy; xStart=-w;  xEnd=vpW; }
+
+    el.style.transform=`translate(${xStart}px, ${yStart}px)`; el.style.visibility='visible';
+    await fadeEl(el, 0, 1, fi);
+
+    const distance=Math.hypot(xEnd-xStart, yEnd-yStart);
+    const totalMs= distance / Math.max(1,speed) * 1000;
+    let acc=0,last=performance.now();
+
+   await new Promise(resolve=>{
+     let acc=0, last=performance.now();
+     const tick = now=>{
+       if (skipRequested) return resolve();
+       if (paused){ last=now; return requestAnimationFrame(tick); }
+       acc += (now-last); last=now;
+       const k = Math.min(1, acc/totalMs);
+       const x = xStart + (xEnd-xStart)*k, y = yStart + (yEnd-yStart)*k;
+       el.style.transform = `translate(${x}px, ${y}px)`;
+       if (fo>0 && acc >= Math.max(0,totalMs-fo)){
+         const kfo = Math.min(1,(acc-(totalMs-fo))/fo);
+         el.style.opacity = String(1 - kfo);
+       }
+       if (k>=1) resolve(); else requestAnimationFrame(tick);
+     };
+     requestAnimationFrame(tick);
+   });
+   if (attached) await attached.stop();   // ensure fully stopped
+   await sleepP(wait);
+   el.remove();
+  }
+
+  async function animateSound(it){
+    const vol=clamp01(it.volume ?? 1);
+    const fi =Math.max(0, Number(it.fadeIn)||0);
+    const fo =Math.max(0, Number(it.fadeOut)||0);
+    const wait=Math.max(0, Number(it.wait)||0);
+    let dur =Math.max(0, Number(it.duration)||0);
+
+    const a=new Audio(it.src); a.preload='auto'; a.loop=!!it.loop; a.volume=0; a.crossOrigin='anonymous';
+    await loadAudio(a);
+    try{ await a.play(); }catch{}
+
+    if (a.loop && dur===0) dur = 2000; // default looped blip
+
+    await fadeAudio(a, 0, vol, fi);
+
+    if (dur>0){
+      const body=Math.max(0, dur - fo);
+      await sleepP(body);
+      await fadeAudio(a, a.volume, 0, fo);
+    } else {
+      await waitEndedOrDuration(a, 0);
+      if (!a.ended) await fadeAudio(a, a.volume, 0, fo);
+    }
+
+    try{ a.pause(); }catch{} a.src='';
+    await sleepP(wait);
+  }
+
+  // --- Runner ---
+  async function run(){
+    if (running) return; running=true; stopRequested=false;
+    if (START_DELAY>0) await sleepP(START_DELAY);
+
+    let i=0;
+    while(!stopRequested){
+      let it=null;
+      if (inserts.length){ it=inserts.shift(); }
+      else {
+        if (!items.length){ await loadMain().catch(()=>{}); if (!items.length){ await sleepP(300); continue; } }
+        it = items[i % items.length]; i++; if (!LOOP && i>=items.length) stopRequested=true;
+      }
+      showDbg(`kind=${it.kind||'text'} • dir=${it.dir||'-'} • speed=${it.speed??'-'} • fi=${it.fadeIn} • fo=${it.fadeOut} • volume=${it.volume??(it.audio?it.audio.volume:'-')} • queue=${inserts.length} • paused=${paused?'yes':'no'}`);
+      skipRequested=false;
+      if (it.kind==='sound') await animateSound(it);
+      else await animateItem(it);
+    }
+    running=false;
+  }
+
+  // --- Input & WS ---
+  window.addEventListener('keydown',e=>{
+    if (e.code==='Space'){ paused=!paused; showDbg(paused?'⏸ paused':'▶ playing'); e.preventDefault(); }
+    else if (e.key==='ArrowRight' || e.key==='n' || e.key==='N'){ skipRequested=true; showDbg('⏭ skip'); }
+    else if (DEBUG && e.key==='r'){ location.reload(); }
+  });
+
+  function acceptPushed(data){
+    try{
+      const payload = typeof data==='string' ? JSON.parse(data) : data;
+      const arr = Array.isArray(payload) ? payload
+                : (payload && Array.isArray(payload.items)) ? payload.items
+                : [payload];
+      const mapped = arr.map(mapJsonNode);
+      if (QUEUE_MODE==='immediate'){ inserts.unshift(...mapped); skipRequested=true; }
+      else if (QUEUE_MODE==='tail'){ inserts.push(...mapped); }
+      else { inserts.unshift(...mapped); }
+      log(`WS push: +${mapped.length}, queue=${inserts.length}`);
+    }catch(e){ log('WS parse error: '+e.message); }
+  }
+  function connectWS(){
+    if (!WS_URL) return;
+    try{
+      const ws=new WebSocket(WS_URL);
+      ws.onopen = ()=>log('WS connected');
+      ws.onmessage = ev => acceptPushed(ev.data);
+      ws.onclose = ()=>{ log('WS closed; retry in 2s'); setTimeout(connectWS,2000); };
+      ws.onerror = ()=>{ try{ ws.close(); }catch{} };
+    }catch(e){ log('WS connect error: '+e.message); }
+  }
+
+  // Boot
+  loadMain().then(run);
+  pollMainLoop();
+  pollQueueLoop();
+  connectWS();
+})();
+</script>
+</body>
+</html>
+
