@@ -77,6 +77,17 @@ Hotkeys
 Space — pause / resume
 → / N — skip current item
 r — reload (when ?debug=1)
+
+
+The queue is a lightweight alert bus. Quick recipe:
+OBS URL: &queue=data/queue.json&queueMode=immediate&queueRefresh=0.5 (instant inserts).
+Payload shape (per alert): {"text": "...", "speed":0, "wait":1200, "fadeIn":200, "fadeOut":200, "audio":{"src":"assets/alert.wav"}}
+– Use speed:0 for pop-up alerts; add type:"image" for badges/icons.
+Priorities: push high-priority as single items; batch low-priority as { "items":[ ... ] }.
+Debounce: your bot adds a short cooldown to avoid alert spam.
+Uniqueness: include a tiny nonce ("t": 1731...) so file-change detection triggers every time.
+Styling: swap looks via ?theme=glass (URL) or per-item md:true with emoji for fast branding.
+Fail-safe: if WS is down, write to queue.json on disk—same payloads still work.
 Bottom-right debug line appears with ?debug=1.
 
 
